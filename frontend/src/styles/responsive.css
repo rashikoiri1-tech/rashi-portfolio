@@ -1,0 +1,31 @@
+/* Responsive Styles across 320px, 375px, 425px, 768px, 1024px, 1440px, 1920px+ */
+
+/* Prevent horizontal overflow on ultra-narrow viewports (320px - 375px) */
+@media (max-width: 375px) {
+  h1 {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .glass-card, .glass-panel {
+    padding: 1rem !important;
+  }
+
+  .canvas-wrapper {
+    height: 250px !important;
+  }
+}
+
+/* Tablet adjustments (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Ultra-wide screens (1920px+) */
+@media (min-width: 1920px) {
+  .max-w-7xl {
+    max-width: 1600px !important;
+  }
+}

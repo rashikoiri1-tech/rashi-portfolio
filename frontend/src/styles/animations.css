@@ -1,0 +1,77 @@
+/* Sophisticated Keyframe Animations & Glow Effects */
+
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(0.99);
+  }
+}
+
+@keyframes floatOrb {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(3deg);
+  }
+}
+
+@keyframes scanline {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 4s ease-in-out infinite;
+}
+
+.animate-float-orb {
+  animation: floatOrb 8s ease-in-out infinite;
+}
+
+/* Portrait Glowing Border */
+.portrait-glow-frame {
+  position: relative;
+  border-radius: 1.5rem;
+  padding: 3px;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.7), rgba(59, 130, 246, 0.3), rgba(139, 92, 246, 0.6));
+  box-shadow: 0 0 35px -5px rgba(6, 182, 212, 0.35);
+  transition: all 0.4s ease;
+}
+
+.portrait-glow-frame:hover {
+  box-shadow: 0 0 50px -2px rgba(6, 182, 212, 0.55), 0 0 30px rgba(139, 92, 246, 0.4);
+}
+
+/* Subtle Tech Glow */
+.tech-badge-glow {
+  box-shadow: inset 0 0 12px rgba(6, 182, 212, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
