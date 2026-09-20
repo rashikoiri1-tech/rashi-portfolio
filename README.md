@@ -10,6 +10,8 @@ Built with **React 18**, **TypeScript**, **Vite**, **Tailwind CSS**, **Node.js**
 
 - **GitHub Repository**: [https://github.com/rashikoiri1-tech/rashi-portfolio.git](https://github.com/rashikoiri1-tech/rashi-portfolio.git)
 - **LinkedIn Profile**: [https://www.linkedin.com/in/rashi-koiri-73a074384](https://www.linkedin.com/in/rashi-koiri-73a074384)
+- **website portfolio**:[Portfolio Website: https://rashi0-portfolio.vercel.app]
+
 
 ---
 
