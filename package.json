@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Full-Stack Portfolio with Vite, React, TypeScript, Express, and 240-frame Canvas Animation",
+  "description": "Full-Stack Portfolio for Rashi Koiri with React, TypeScript, Express, and Canvas Animation",
   "scripts": {
     "dev": "node dev.js",
     "install:all": "npm install && npm run install:backend && npm run install:frontend",
@@ -10,7 +10,8 @@
     "install:backend": "npm install --prefix backend",
     "generate:frames": "node scripts/generate-frames.js",
     "generate:images": "node scripts/generate-project-images.js",
-    "build": "npm run build --prefix frontend",
+    "build": "npm --prefix frontend install && npm --prefix frontend run build",
+    "vercel-build": "npm --prefix frontend install && npm --prefix frontend run build",
     "start": "npm run start --prefix backend"
   },
   "keywords": [
@@ -20,8 +21,9 @@
     "vite",
     "typescript",
     "express",
-    "canvas"
+    "mysql",
+    "rashi-koiri"
   ],
-  "author": "",
+  "author": "Rashi Koiri",
   "license": "MIT"
 }
